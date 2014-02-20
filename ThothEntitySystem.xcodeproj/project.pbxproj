@@ -8,14 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		B4EC770A18B6B3210028B385 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4EC770918B6B3210028B385 /* Foundation.framework */; };
-		B4EC770F18B6B3210028B385 /* ThothEntitySystem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4EC770E18B6B3210028B385 /* ThothEntitySystem.h */; };
-		B4EC771118B6B3210028B385 /* ThothEntitySystem.m in Sources */ = {isa = PBXBuildFile; fileRef = B4EC771018B6B3210028B385 /* ThothEntitySystem.m */; };
 		B4EC771818B6B3210028B385 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4EC771718B6B3210028B385 /* XCTest.framework */; };
 		B4EC771918B6B3210028B385 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4EC770918B6B3210028B385 /* Foundation.framework */; };
 		B4EC771B18B6B3210028B385 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4EC771A18B6B3210028B385 /* UIKit.framework */; };
 		B4EC771E18B6B3210028B385 /* libThothEntitySystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4EC770618B6B3210028B385 /* libThothEntitySystem.a */; };
 		B4EC772418B6B3210028B385 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4EC772218B6B3210028B385 /* InfoPlist.strings */; };
 		B4EC772618B6B3210028B385 /* ThothEntitySystemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4EC772518B6B3210028B385 /* ThothEntitySystemTests.m */; };
+		B4EC778B18B6B79C0028B385 /* Bitset.m in Sources */ = {isa = PBXBuildFile; fileRef = B4EC778318B6B79C0028B385 /* Bitset.m */; };
+		B4EC778C18B6B79C0028B385 /* Component.m in Sources */ = {isa = PBXBuildFile; fileRef = B4EC778418B6B79C0028B385 /* Component.m */; };
+		B4EC778D18B6B79C0028B385 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = B4EC778518B6B79C0028B385 /* Entity.m */; };
+		B4EC778E18B6B79C0028B385 /* EntityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B4EC778618B6B79C0028B385 /* EntityManager.m */; };
+		B4EC778F18B6B79C0028B385 /* System.m in Sources */ = {isa = PBXBuildFile; fileRef = B4EC778718B6B79C0028B385 /* System.m */; };
+		B4EC779018B6B79C0028B385 /* SystemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B4EC778818B6B79C0028B385 /* SystemManager.m */; };
+		B4EC779118B6B79C0028B385 /* ThothEntitySystem.m in Sources */ = {isa = PBXBuildFile; fileRef = B4EC778918B6B79C0028B385 /* ThothEntitySystem.m */; };
+		B4EC779218B6B79C0028B385 /* World.m in Sources */ = {isa = PBXBuildFile; fileRef = B4EC778A18B6B79C0028B385 /* World.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +41,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				B4EC770F18B6B3210028B385 /* ThothEntitySystem.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,14 +50,28 @@
 		B4EC770618B6B3210028B385 /* libThothEntitySystem.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libThothEntitySystem.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4EC770918B6B3210028B385 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B4EC770D18B6B3210028B385 /* ThothEntitySystem-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ThothEntitySystem-Prefix.pch"; sourceTree = "<group>"; };
-		B4EC770E18B6B3210028B385 /* ThothEntitySystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThothEntitySystem.h; sourceTree = "<group>"; };
-		B4EC771018B6B3210028B385 /* ThothEntitySystem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThothEntitySystem.m; sourceTree = "<group>"; };
 		B4EC771618B6B3210028B385 /* ThothEntitySystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThothEntitySystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4EC771718B6B3210028B385 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B4EC771A18B6B3210028B385 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		B4EC772118B6B3210028B385 /* ThothEntitySystemTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ThothEntitySystemTests-Info.plist"; sourceTree = "<group>"; };
 		B4EC772318B6B3210028B385 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B4EC772518B6B3210028B385 /* ThothEntitySystemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThothEntitySystemTests.m; sourceTree = "<group>"; };
+		B4EC777818B6B7540028B385 /* Bitset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bitset.h; path = Headers/Bitset.h; sourceTree = "<group>"; };
+		B4EC777918B6B7540028B385 /* Component.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Component.h; path = Headers/Component.h; sourceTree = "<group>"; };
+		B4EC777A18B6B7540028B385 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Entity.h; path = Headers/Entity.h; sourceTree = "<group>"; };
+		B4EC777B18B6B7540028B385 /* EntityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EntityManager.h; path = Headers/EntityManager.h; sourceTree = "<group>"; };
+		B4EC777C18B6B7540028B385 /* System.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = System.h; path = Headers/System.h; sourceTree = "<group>"; };
+		B4EC777D18B6B7540028B385 /* SystemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SystemManager.h; path = Headers/SystemManager.h; sourceTree = "<group>"; };
+		B4EC777E18B6B7540028B385 /* ThothEntitySystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThothEntitySystem.h; path = Headers/ThothEntitySystem.h; sourceTree = "<group>"; };
+		B4EC777F18B6B7540028B385 /* World.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = World.h; path = Headers/World.h; sourceTree = "<group>"; };
+		B4EC778318B6B79C0028B385 /* Bitset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bitset.m; path = ThothEntitySystem/Src/Bitset.m; sourceTree = "<group>"; };
+		B4EC778418B6B79C0028B385 /* Component.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Component.m; path = ThothEntitySystem/Src/Component.m; sourceTree = "<group>"; };
+		B4EC778518B6B79C0028B385 /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Entity.m; path = ThothEntitySystem/Src/Entity.m; sourceTree = "<group>"; };
+		B4EC778618B6B79C0028B385 /* EntityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EntityManager.m; path = ThothEntitySystem/Src/EntityManager.m; sourceTree = "<group>"; };
+		B4EC778718B6B79C0028B385 /* System.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = System.m; path = ThothEntitySystem/Src/System.m; sourceTree = "<group>"; };
+		B4EC778818B6B79C0028B385 /* SystemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SystemManager.m; path = ThothEntitySystem/Src/SystemManager.m; sourceTree = "<group>"; };
+		B4EC778918B6B79C0028B385 /* ThothEntitySystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThothEntitySystem.m; path = ThothEntitySystem/Src/ThothEntitySystem.m; sourceTree = "<group>"; };
+		B4EC778A18B6B79C0028B385 /* World.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = World.m; path = ThothEntitySystem/Src/World.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +100,8 @@
 		B4EC76FD18B6B3210028B385 = {
 			isa = PBXGroup;
 			children = (
+				B4EC778118B6B7910028B385 /* Src */,
+				B4EC778018B6B75B0028B385 /* Headers */,
 				B4EC770B18B6B3210028B385 /* ThothEntitySystem */,
 				B4EC771F18B6B3210028B385 /* ThothEntitySystemTests */,
 				B4EC770818B6B3210028B385 /* Frameworks */,
@@ -110,8 +131,6 @@
 		B4EC770B18B6B3210028B385 /* ThothEntitySystem */ = {
 			isa = PBXGroup;
 			children = (
-				B4EC770E18B6B3210028B385 /* ThothEntitySystem.h */,
-				B4EC771018B6B3210028B385 /* ThothEntitySystem.m */,
 				B4EC770C18B6B3210028B385 /* Supporting Files */,
 			);
 			path = ThothEntitySystem;
@@ -141,6 +160,37 @@
 				B4EC772218B6B3210028B385 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B4EC778018B6B75B0028B385 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				B4EC777818B6B7540028B385 /* Bitset.h */,
+				B4EC777918B6B7540028B385 /* Component.h */,
+				B4EC777A18B6B7540028B385 /* Entity.h */,
+				B4EC777B18B6B7540028B385 /* EntityManager.h */,
+				B4EC777C18B6B7540028B385 /* System.h */,
+				B4EC777D18B6B7540028B385 /* SystemManager.h */,
+				B4EC777E18B6B7540028B385 /* ThothEntitySystem.h */,
+				B4EC777F18B6B7540028B385 /* World.h */,
+			);
+			name = Headers;
+			path = ThothEntitySystem;
+			sourceTree = "<group>";
+		};
+		B4EC778118B6B7910028B385 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				B4EC778318B6B79C0028B385 /* Bitset.m */,
+				B4EC778418B6B79C0028B385 /* Component.m */,
+				B4EC778518B6B79C0028B385 /* Entity.m */,
+				B4EC778618B6B79C0028B385 /* EntityManager.m */,
+				B4EC778718B6B79C0028B385 /* System.m */,
+				B4EC778818B6B79C0028B385 /* SystemManager.m */,
+				B4EC778918B6B79C0028B385 /* ThothEntitySystem.m */,
+				B4EC778A18B6B79C0028B385 /* World.m */,
+			);
+			name = Src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,7 +274,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4EC771118B6B3210028B385 /* ThothEntitySystem.m in Sources */,
+				B4EC778D18B6B79C0028B385 /* Entity.m in Sources */,
+				B4EC778B18B6B79C0028B385 /* Bitset.m in Sources */,
+				B4EC779218B6B79C0028B385 /* World.m in Sources */,
+				B4EC779118B6B79C0028B385 /* ThothEntitySystem.m in Sources */,
+				B4EC778E18B6B79C0028B385 /* EntityManager.m in Sources */,
+				B4EC778C18B6B79C0028B385 /* Component.m in Sources */,
+				B4EC779018B6B79C0028B385 /* SystemManager.m in Sources */,
+				B4EC778F18B6B79C0028B385 /* System.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +388,7 @@
 		B4EC772A18B6B3210028B385 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				DSTROOT = /tmp/ThothEntitySystem.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ThothEntitySystem/ThothEntitySystem-Prefix.pch";
@@ -343,6 +401,7 @@
 		B4EC772B18B6B3210028B385 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				DSTROOT = /tmp/ThothEntitySystem.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ThothEntitySystem/ThothEntitySystem-Prefix.pch";
@@ -409,6 +468,7 @@
 				B4EC772B18B6B3210028B385 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4EC772C18B6B3210028B385 /* Build configuration list for PBXNativeTarget "ThothEntitySystemTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +477,7 @@
 				B4EC772E18B6B3210028B385 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
